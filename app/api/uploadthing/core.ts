@@ -24,10 +24,6 @@ export const ourFileRouter = {
       maxFileSize: "16MB",
       maxFileCount: 1,
     },
-    "application/vnd.openxmlformats-officedocument.wordprocessingml.document": {
-      maxFileSize: "16MB", 
-      maxFileCount: 1,
-    },
   })
     .middleware(async ({ req }) => {
       const user = await auth(req);
@@ -58,10 +54,7 @@ export const ourFileRouter = {
       maxFileSize: "16MB",
       maxFileCount: 1,
     },
-    "application/vnd.openxmlformats-officedocument.wordprocessingml.document": {
-      maxFileSize: "16MB", 
-      maxFileCount: 1,
-    },
+
   })
     .middleware(async ({ req }) => {
       const user = await auth(req);
