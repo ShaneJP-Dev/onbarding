@@ -278,7 +278,15 @@ const CompanyRegistrationForm = () => {
             </h2>
             <button
               type="button"
-              onClick={() => appendDirector({})}
+              onClick={() =>
+                appendDirector({
+                  fullName: "",
+                  idPassport: "",
+                  residentialAddress: "",
+                  contactNumber: "",
+                  emailAddress: "",
+                })
+              }
               className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
             >
               Add Director
